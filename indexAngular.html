@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>My awesome site using Angular</title>
+	<meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>  
+
+    <style>
+        body
+        {
+            background-color:black;
+            text-align:center;
+            color:green;
+        }
+        span
+        {
+            color:red;
+        }
+        #result
+        {
+            color:green;
+        }
+    </style>
+</head>
+<body>
+    <div ng-app="myApp" ng-controller="personCtrl">
+        <h1>What is the product of <span>6</span> and <span>8</span>?</h1>
+        <input type="text" ng-model="userInteredNum"/>
+        <button type="submit" ng-click="checkInteredNum()">Submit</button>
+        <br /><br />
+        {{result}}
+    </div>
+    <script src="Controller.js"></script>
+</body>
+</html>
